@@ -350,6 +350,4 @@ async function animstart(){
   
 }
 
-
-
 typeLoading();
