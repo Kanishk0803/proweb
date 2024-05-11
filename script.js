@@ -43,7 +43,7 @@ async function typeLoading() {
         textContainer.textContent = loadingText;
     }
     if(i != (dots.length*4) -1){
-        await sleep(250);
+        await sleep(90);
         
     }
   }
@@ -137,7 +137,7 @@ async function welcoming() {
     await sleep(50);
   }
   entered = false
-  const pressText = 'Press anywhere to enter site';
+  const pressText = 'Press anywhere to See Magic';
   screen.addEventListener('click', playVid);
   textPress.textContent = pressText;
   async function toggleVisibility() {
@@ -167,13 +167,12 @@ async function fetchIP() {
     
 }
 
-
-
 function playVid(){
   textPress.style.visibility = 'hidden';
   entered = true;
   video.muted = false;
   video.play();
+  video.focus = true
   screen.classList.add('black-screen-hidden');
   animstart();
 }
@@ -202,7 +201,13 @@ class Point {
   }
 }
 
-const sentences = ["Software Engineer", "20y/o | c++ java Rust", "Native Android Developer"];
+const sentences = ["Hi, I am a Self Taught Android Developer", 
+"Who always stays up to date with the latest technologies", 
+"I use Arch btw",
+"I use my custom-compiled Linux kernel on my Android device, by the way" ,
+"I love to modify system frameworks on Android",
+"And I love Kotlin",
+"Currently working on my personal project Hostcraft Android app; will release soon"];
 let currentSentenceIndex = 0;
 let currentCharacterIndex = 0;
 let writing = true;
@@ -248,7 +253,7 @@ function linkHandle(event){
       window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D', '_blank');
       break;
     case 'text-dc':
-      window.open('https://discord.gg/Ae8NpsMn', '_blank');
+      window.open('https://discord.gg/2TTB3RmMMe', '_blank');
       break;
   }
 }
@@ -260,7 +265,7 @@ async function animstart(){
   textInfo.textContent = "hahaha so cool";
   textGithub.textContent = "Github";
   textYT.textContent = "Youtube";
-  textDC.textContent = "Discord";
+  textDC.textContent = "Discord Server";
 
   textGithub.addEventListener('click', linkHandle)
   textYT.addEventListener('click', linkHandle);
