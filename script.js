@@ -265,7 +265,7 @@ async function animstart(){
   textInfo.textContent = "hahaha so cool";
   textGithub.textContent = "Github";
   textYT.textContent = "Youtube";
-  textDC.textContent = "Discord Server";
+  textDC.textContent = "Discord";
 
   textGithub.addEventListener('click', linkHandle)
   textYT.addEventListener('click', linkHandle);
