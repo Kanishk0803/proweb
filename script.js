@@ -201,7 +201,7 @@ class Point {
   }
 }
 
-const sentences = ["Hi, I am kanishk (Armin)", 
+const sentences = ["Hi, I am kanishk (Armin)"], 
 "Who always stays up to date with the latest technologies", 
 "I use Arch btw",
 "I use my custom-compiled Linux kernel on my Android device, by the way" ,
