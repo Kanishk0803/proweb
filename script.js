@@ -106,7 +106,7 @@ async function welcoming() {
     }
   } 
   const welcome = ['Welcome back ', `Good to see someone from ${country}.`];
-  
+    
   const ipTextSpan = document.createElement('span');
   const iptext = ipaddr.toString();
   ipTextSpan.style.fontFamily = 'bold';
@@ -201,7 +201,7 @@ class Point {
   }
 }
 
-const sentences = ["Hi, I am a Self Taught Android Developer", 
+const sentences = ["Hi, I am kanishk (Armin)", 
 "Who always stays up to date with the latest technologies", 
 "I use Arch btw",
 "I use my custom-compiled Linux kernel on my Android device, by the way" ,
@@ -250,7 +250,7 @@ function linkHandle(event){
       window.open('https://github.com/alex5402', '_blank');
       break;
     case 'text-yt':
-      window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D', '_blank');
+      window.open('https://www.instagram.com/kanishk_3607/', '_blank');
       break;
     case 'text-dc':
       window.open('https://discord.gg/2TTB3RmMMe', '_blank');
@@ -260,11 +260,11 @@ function linkHandle(event){
 
 async function animstart(){
   textnullBit.style.zIndex = "6";
-  const alex = "ALEX5402"
+  const alex = "keni._.0803"
   textnullBit.textContent = alex;
   textInfo.textContent = "hahaha so cool";
   textGithub.textContent = "Github";
-  textYT.textContent = "Youtube";
+  textYT.textContent = "Instagram";
   textDC.textContent = "Discord";
 
   textGithub.addEventListener('click', linkHandle)
