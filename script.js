@@ -58,7 +58,7 @@ async function grantingAccess() {
   const granting = document.createElement('span');
   const grantingText = 'Granting access ';
   granting.style.color = 'white';
-
+   
   const hashtag = document.createElement('span');
   hashtag.textContent = '# ';
   hashtag.style.color = 'darkred';
